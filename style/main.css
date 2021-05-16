@@ -1,6 +1,6 @@
 :root {
-  --vermelho: #638cce;
-  --preto: #141414;
+  --vermelho: #ad70f3;
+  --preto: black;
 }
 /*elementos base */
 * {
@@ -11,7 +11,7 @@
 
 body {
   background: var(--preto);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Arial', Times, serif;
   color: white;
 }
 
@@ -25,7 +25,7 @@ header .container {
 header .logo {
   margin-left: 5px;
   color: var(--vermelho);
-  font-family: 'Arial Black', Times;
+  font-family: 'OCR A Extended', Arial, Helvetica, sans-serif;
   font-size: 40px;
 }
 
@@ -42,10 +42,12 @@ header nav a:hover {
 /* livro principal*/
 
 .livro-principal {
+  margin-left: 700px;
   font-size: 16px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
     url('/img/neuromancer.jpg');
-  height: 400px;
+  height: 800px;
+  width: 600px;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -54,10 +56,12 @@ header nav a:hover {
 }
 
 .livro-principal .descricao {
+  margin-left: 600px;
   margin-top: 10px;
   margin-bottom: 40px;
 }
 .livro-principal .titulo {
+  margin-left: 600px;
   margin-top: 15%;
   font-size: 40px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
@@ -89,11 +93,62 @@ header nav a:hover {
 }
 
 .livro-principal .container {
-  width: 30%;
+  width: 60%;
 }
 
 .box-livro {
   height: 400px;
   width: 200px;
   display: block;
+}
+
+.carrossel-livros {
+  margin-top: 5px;
+}
+
+/*pagina livros*/
+
+.menu-livro {
+  margin-left: 300px;
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url('/img/neuromancer.jpg');
+  height: 800px;
+  width: 600px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-livro .capitulo {
+  margin-left: 600px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.menu-livro .titulo {
+  margin-left: 600px;
+  margin-top: 15%;
+  font-size: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+.menu-capitulos {
+  border: 1px solid #ad70f3;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.menu-capitulos .capitulo {
+  margin-left: 10px;
+}
+
+.menu-capitulos .titulo {
+  margin-left: 10px;
+}
+
+.corpo {
+  display: flex;
+  flex-direction: row;
 }
